@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>我的 Flask 網站</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>英澤的天地 </h1>
+        <p>Python × Flask × GitHub × Render</p>
+    </header>
+
+    <main class="container">
+
+        <div class="card">
+
+            <h2>👋 Hello World!</h2>
+
+            <p>歡迎來到我的 Flask Web Application</p>
+
+            <div class="time-box">
+                <p>🇹🇼 台灣現在時間</p>
+
+                <strong>{{ current_time }}</strong>
+            </div>
+
+            <div class="status">
+                ● Flask Server 正常運作
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        Flask Web Project
+    </footer>
+
+</body>
+</html>
+ 
